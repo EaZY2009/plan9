@@ -1,0 +1,357 @@
+* {
+  /*-webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;*/
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  min-width: 320px;
+  font-size: 14px;
+  margin:auto;
+}
+
+img { 
+  max-width:100%; 
+  height:auto; 
+  border:0;
+  margin:0 auto;
+  width: auto\9;
+}
+
+a {
+  text-decoration: none;
+  color: #6699FF;
+  display:inline-block;
+}
+
+button, input, select, textarea {
+  color: #6699FF;
+  font-family: "Open Sans", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.overflow {
+	overflow:hidden;
+	clear:both;
+}
+
+ul, li {
+	margin:0;
+	padding:0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 960px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.header, .bigpicture, .main-info, .teaser {
+	margin-bottom:60px;
+}
+
+
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+header {
+	
+}
+.header {
+	width:100%;
+	font-size:100%;
+	padding:20px 0;
+	border-bottom:2px solid #6699ff;
+	position:relative;
+}
+
+.logo {
+	float:left;
+	width:80px;
+}
+.logo a {
+	width:100%;
+}
+
+.btnMenu {
+	width:40px;
+	height:40px;
+	background:red;
+	cursor:pointer;
+	display:none;
+	background:url(../img/btnMenu.png) no-repeat center center;
+	background-size:100% 100%;
+}
+
+nav {
+	width:75%;
+	float:right;
+	box-sizing:border-box;
+	padding-top:55px;
+}
+nav ul {
+	text-align:justify;
+	height:25px;
+	box-sizing:border-box;
+	position:relative;
+}
+nav ul:after {
+	content: "";
+	clear: both;
+	padding-left:100%;
+	display:inline-block;
+}
+nav ul li {
+	position:relative;
+	line-height:30px;
+	list-style-type:none;
+	display:inline-block;
+	vertical-align: baseline;
+	font-size:1.2em;
+}
+nav a {
+	text-transform:uppercase;
+	color:#000000;
+	font-weight:700;
+}
+nav a.active, nav a:hover {
+	color:#6699ff;
+}
+
+
+
+.bigpicture {
+	height:250px;
+	background:url(../img/emo.jpg) no-repeat center center;
+	background-size:cover;
+	position:relative;
+}
+.bigpicture h1 {
+	color:#fff;
+	padding-top:40px;;
+	font-size:2.5em;
+	text-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.swiper-container, .swiper-slide {
+	width:100%;
+  height: 250px;
+}
+
+.emo1 {
+	background:url(../img/emo.jpg) no-repeat center center;
+	background-size:cover;
+}
+.emo2 {
+	background:url(../img/emo2.jpg) no-repeat center center;
+	background-size:cover;
+}
+.emo3 {
+	background:url(../img/emo3.jpg) no-repeat center center;
+	background-size:cover;
+}
+
+
+
+.main-info {
+	
+}
+
+
+
+.teaser a {
+	color:#000;
+	width:100%;
+}
+.teaser figure {
+	overflow:hidden;
+}
+.teaser a:hover img {
+	transform:scale(1.1);
+}
+.teaser a:hover .text {
+	background:#ebebeb;
+}
+.text span {
+	line-height:1.7em;
+}
+
+
+
+footer {
+	background-color:#6699ff;
+	color:#ffffff;
+	margin-top:3%;
+}
+footer h3 {
+	margin:6% 0 3%;
+}
+
+
+
+/* ==========================================================================
+Colors
+========================================================================== */
+
+
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,700);*/
+/*
+Normal:						font-weight: 400; font-style: normal;
+Semibold:					font-weight: 600; font-style: normal;
+Semibold Italic:			font-weight: 600;	font-style: italic;
+Bold:						font-weight: 700; font-style: normal;
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height:1;
+  font-style:normal;
+}
+
+h1, .h1 {
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-weight: 400;
+}
+
+h3 {
+	text-transform:uppercase;
+	font-weight: 600;
+}
+
+h4 {
+	font-size:1em;
+	text-transform:uppercase;
+	line-height:1.4em;
+	font-weight:600;
+}
+
+.text {
+  font-weight: 400;
+  padding:10px;
+}
+
+.text-highlight {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.links, .nav {
+  font-weight: 700;
+}
+
+
+
+/* ==========================================================================
+Grid
+========================================================================== */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  position: relative;
+  float: left;
+box-sizing: border-box; }
+
+.col1 {
+  width: 8.33333%;
+padding: 0 10px; }
+
+.col2 {
+  width: 16.66667%;
+padding: 0 10px; }
+
+.col3 {
+  width: 25%;
+padding: 0 10px; }
+
+.col4 {
+  width: 33.33333%;
+padding: 0 10px; }
+
+.col5 {
+  width: 41.66667%;
+padding: 0 10px; }
+
+.col6 {
+  width: 50%;
+padding: 0 10px; }
+
+.col7 {
+  width: 58.33333%;
+padding: 0 10px; }
+
+.col8 {
+  width: 66.66667%;
+padding: 0 10px; }
+
+.col9 {
+  width: 75%;
+padding: 0 10px; }
+
+.col10 {
+  width: 83.33333%;
+padding: 0 10px; }
+
+.col11 {
+  width: 91.66667%;
+padding: 0 10px; }
+
+.col12 {
+  width: 100%;
+padding: 0 10px; }
+
+.column {
+	margin:20px 0;
+}
+
+
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+@media only screen and (min-width: 1024px) {
+  
+}
+@media only screen and (max-width:600px) {
+	.container { padding:0 10px;}
+	.header { margin-bottom:20px; padding:10px 0; }
+	.logo { float:right; width:40px; }
+	.btnMenu { display:block; }
+	nav { float:none; width:auto; display:none; border-top: 2px solid #ebebeb; margin-top: 10px; padding: 20px 0 10px; }
+	nav ul { height:auto; }
+	nav ul:after { display:none; }
+	nav ul li { display:block; text-align:center; }
+	nav.open { display:block; }
+	.bigpicture { }
+}
+
+@media only screen and (max-width: 520px) {
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    float: none;
+    width: auto;
+    margin:20px 0;
+  }
+}
+
+/* ==========================================================================
+Viewport Declaration for Windows Tablets
+========================================================================== */
+@-ms-viewport {
+  width: device-width;
+}
